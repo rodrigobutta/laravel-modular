@@ -1,0 +1,51 @@
+bootstrap/cache
+# mac os
+*.DS_Store
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# composer
+vendor/
+composer.lock
+.composer
+composer
+composer-setup.php
+composer.phar
+yarn.lock
+
+# bower
+resources/assets/vendor/
+
+# node
+node_modules
+
+# todos los uploads salvo los defaults
+uploads/cache
+uploads/tasks
+uploads/task_categories
+uploads/media
+uploads/avatars
+uploads/articles
+uploads/documents/*
+!uploads/documents/serviciotecnico
+uploads/campaigns
+uploads/areas
+uploads/portfolio
+
+# parametros de entorno
+*.env
+/.env
+/auth.json
+/readme.md
+*.local
+
+bgh.sublime-workspace
+bgh.sublime-project
+
+public/css/sullair.css
+/phploy.ini
