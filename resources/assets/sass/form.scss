@@ -1,0 +1,477 @@
+
+@import "_variables";
+
+
+label {
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+
+.form-overlay {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0; bottom: 0; left: 0; right: 0;
+    z-index: 100;
+    background: rgba(255,255,255,0.8);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    color: $brand-gray;
+}
+
+
+
+form.contact-form .overlay .progress {
+    width: 20%;
+    height: 10px;
+}
+form.contact-form .error {
+    border-color: red !important;
+}
+
+
+form.contact-form fieldset {
+    flex-basis: 47%;
+    width: 47%;
+}
+
+form.contact-form button {
+    min-width: 200px;
+}
+form.contact-form input,
+form.contact-form textarea,
+form.contact-form select {
+    width: 100%;
+   background-color: transparent;
+   border: 0;
+   border-bottom: 1px solid #e2e2e2;
+   border-right: 1px solid #e2e2e2;
+   /* font-size: 1.6em; */
+   padding: 10px 0;
+   /* margin-bottom: 24px; */
+   resize: none;
+   color: #262626;
+   transition: all ease 0.3s;
+   box-shadow: none;
+   border-radius: 0px;
+}
+form.contact-form input[type="checkbox"]{
+    width: auto;
+}
+form.contact-form textarea {
+    height: 86px;
+}
+form.contact-form input:focus,
+form.contact-form textarea:focus,
+form.contact-form select:focus {
+    border-bottom: 1px solid #262626;
+    outline: none;
+    box-shadow: none;
+}
+
+form.contact-form .alert-danger{
+    color: #ff0000;
+}
+
+form.contact-form ul#categories{
+    list-style: none;
+}
+
+form.contact-form ul#categories li ul{
+    display: none;
+}
+form.contact-form ul#categories.tree{
+    padding: 0;
+    margin: 0;
+}
+form.contact-form ul#categories.tree li{
+    padding: 5px 0;
+}
+
+
+form.contact-form ul#actions.tree{
+    padding: 0;
+    margin: 0;
+}
+form.contact-form ul#actions.tree li{
+    padding: 5px 0;
+}
+form.contact-form ul#actions{
+    list-style: none;
+}
+
+form.contact-form ul#actions li ul{
+    display: none;
+}
+
+
+
+form.contact-form .field select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance:none;
+    background: url(../img/select_arrow.png) no-repeat right 20px;
+
+    text-indent: 0.01px;
+    text-overflow: "";
+
+    padding: 0px;
+    border-bottom: 1px solid $brand-gray;
+    width: 100%;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+form.contact-form .field select:focus{
+    border-bottom: 1px solid $brand-gray;
+}
+
+
+.form-response-overlay{
+
+    position: absolute;
+    left: 0px;
+    background-color: rgba(255,255,255,0.9);
+    z-index: 50;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding-top: 10%;
+    color: $brand-gray;
+    font-size: 36px;
+
+    display: none;
+
+}
+
+
+form.contact-form span.form-checkbox-label {
+   font-size: 14px !important;
+   padding-left: 10px;
+   color: $brand-gray;
+   transition: all ease 0.3s;
+   position: relative;
+   top: -2px;
+}
+
+
+form.contact-form .field.checkboxes{
+    padding-top: 25px;
+}
+
+form.contact-form .field.checkboxes label{
+    top: 0px;
+    bottom: auto;
+}
+
+form.contact-form .field.button button{
+    float: right;
+}
+
+
+form.contact-form .checkboxes {
+    width: 100%;
+    float: left;
+    position: relative;
+    padding-bottom: 7px;
+    padding-right: 12px;
+    /*border-bottom: 1px solid $brand-gray;*/
+    /*margin-bottom: 20px;*/
+}
+form.contact-form .checkboxes > label {
+    color: $brand-gray !important;
+    display: block;
+    margin-bottom: 5px;
+
+}
+
+.custom-checkbox {
+    margin-bottom: -5px;
+}
+
+.custom-checkbox label {
+    display: block;
+    font-size: 14px;
+}
+
+.custom-checkbox input[type=checkbox] { display:none; }
+.custom-checkbox input[type=checkbox] + label:before {
+  font-family: FontAwesome;
+  display: inline-block;
+  font-size: 24px;
+  position: relative;
+  top: 4px;
+}
+
+.custom-checkbox input[type=checkbox] + label:before { content: "\f1db"; }
+.custom-checkbox input[type=checkbox] + label:before { letter-spacing: 10px; }
+
+
+
+.custom-checkbox input[type=checkbox]:checked + label:before { content: "\f058"; }
+.custom-checkbox input[type=checkbox]:checked + label:before {
+    letter-spacing: 7px;
+    margin-right: 3px;
+}
+
+@media only screen and (max-width: 960px) {
+    form.contact-form .field button{
+        max-width: 100%;
+
+    }
+}
+
+
+
+
+
+
+.contact-form {
+  padding: 0;
+  display: block;
+  width: 100%;
+
+  .field {
+    width: 50%;
+    float: left;
+    position: relative;
+    padding-right: 20px;
+    margin-bottom: 18px;
+    min-height: 40px;
+
+    label {
+      position: absolute;
+      left: 0;
+      bottom: 0px;
+      color: $brand-darker;
+      pointer-events: none;
+      font-weight: 300;
+      transition: all .25s ease-in-out;
+    }
+
+    input {
+      background: none;
+      border: none;
+      border-bottom: 1px solid $brand-gray;
+      width: 100%;
+      font-size: 14px;
+      font-weight: 300;
+      color: $brand-black;
+      height: 40px;
+
+      &:focus {
+        outline: none;
+        border-bottom: 1px solid transparentize($brand-black, 0.3);
+      }
+
+      &:focus ~ label, &.open ~ label{
+        bottom: 28px;
+        font-size: 14px;
+        color: $brand-gray-dark;
+      }
+    }
+
+    &.dropdown {
+      margin-bottom: 0;
+    }
+
+    &.select {
+      select {
+        position: relative;
+        padding: 0;
+        border: none;
+        border-bottom: 1px solid $brand-gray;
+        margin: 0;
+        color: $brand-black;
+        height: 40px;
+        width: 100%;
+        padding-top: 5px;
+      }
+    }
+
+    &.textarea {
+      width: 66.666666%;
+
+      textarea {
+        width: 100%;
+        border: none;
+        border: 1px solid $brand-gray;
+        color: $brand-black;
+        font-size: 18px;
+        resize: none;
+        // background: $brand-gray-light;
+        min-height: 245px;
+      }
+
+      label {
+        font-size: 17px;
+        position: static;
+        // border-bottom: 1px solid $brand-gray;
+        display: block;
+        margin-top: 15px;
+      }
+    }
+
+    button {
+      border-radius: 2em;
+      border: 1px solid $brand-primary;
+      padding: 10px 30px;
+      text-decoration: none;
+      font-size: 15px;
+      width: 100%;
+      max-width: 250px;
+      background-color: $brand-primary;
+      color: $brand-white;
+      display: inline-block;
+      margin: 0;
+
+      &:hover {
+        color: $brand-primary;
+        background-color: $brand-white;
+      }
+    }
+
+    &.clear-left {
+      clear: left;
+    }
+
+    .form-checkbox-label {
+      font-size: 16px;
+    }
+
+    &.button {
+      float: right;
+    }
+  }
+
+
+  .form-group {
+    &.categories {
+      width: 66.66666%;
+      padding-right: 30px;
+
+      & > label {
+        border-bottom: 1px solid $brand-gray;
+        display: block;
+      }
+
+      label {
+        color: $brand-black;
+      }
+
+      ul {
+        li {
+          width: 50%;
+          display: block;
+          float: left;
+        }
+      }
+    }
+
+    &.actions {
+      width: 100%;
+      padding-right: 30px;
+
+      & > label {
+        border-bottom: 1px solid $brand-gray;
+        display: block;
+      }
+
+      label {
+        color: $brand-black;
+      }
+    }
+
+    &.categories, &.actions {
+      margin-top: 30px;
+    }
+
+    .custom-checkbox {
+      input[type="checkbox"]:checked ~ label {
+        color: $brand-black;
+      }
+    }
+  }
+
+  @media (max-width: 900px) {
+    width: 100%;
+    .checkboxes > label {
+      margin-left: 20px;
+    }
+    .left {
+      width: 100%;
+      .field{
+        width: 100%;
+      }
+    }
+    .right{
+      float: left;
+      width: 100%;
+      padding: 0 20px;
+      .field{
+        padding: 0;
+      }
+    }
+    .field {
+      width: 100%;
+      padding: 0 20px;
+
+      label {
+        left: 20px;
+      }
+
+      &.dropdown {
+        padding-left: 8px;
+      }
+
+      &.textarea {
+        width: 100%;
+        margin-top: 30px;
+
+        textarea {
+          min-height: 100px;
+        }
+      }
+
+      &.button {
+        width: 100%;
+      }
+    }
+    .form-group{
+      .custom-checkbox{
+        padding-left: 20px;
+      }
+      &.categories{
+        width: 100%;
+        ul, ul#categories{
+
+          li{
+            width: 100%;
+          }
+        }
+      }
+      &.actions{
+        width: 100%;
+        ul, ul#categories{
+          margin-left: 20px;
+          li{
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  .error {
+    background: #fdd !important;
+    color: #c00 !important;
+    border-color: #c00 !important;
+
+    &+label {
+      color: #c00 !important;
+    }
+  }
+}

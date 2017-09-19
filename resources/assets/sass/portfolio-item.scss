@@ -1,0 +1,42 @@
+@import "vendor/bootstrap/variables";
+@import "vendor/bootstrap/mixins";
+@import "_variables";
+
+
+
+#intranet_portfolio_item{
+
+    h1.title{
+        font-size: 2em;
+    }
+
+
+    #downloads{
+        padding: 10px 0px;;
+    }
+
+
+    .img-centered{
+        text-align: center;
+    }
+
+
+    .wrapper{
+        padding-bottom: 50px;
+        border-bottom: 2px dashed #ccc;
+        padding-top: 50px;
+
+        &:first-child{
+            padding-top: 0px;
+        }
+        &:last-child{
+            border-bottom: 0px dashed #ccc;
+        }
+
+
+        img{
+            width: 100%;
+        }
+    }
+
+}

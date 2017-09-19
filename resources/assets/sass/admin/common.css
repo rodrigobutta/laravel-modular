@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+
+
+/* FIXES BOOTSTRAP RESET */
+
+div.row {
+    margin-bottom: 15px; /* juega en dashboard y en edits*/
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+/*calendario de dashboard */
+table {
+    width: 100%;
+    max-width: 100%;
+}
+
+.datepicker-inline {
+    width: 100%;
+}
+
+table.dataTable {
+    margin-top: 10px;
+    float: left;
+}
+
+/* modal de live grid*/
+div.form-group {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.table > thead > tr > th, .table > thead > tr > td, .table > tbody > tr > th, .table > tbody > tr > td, .table > tfoot > tr > th, .table > tfoot > tr > td {
+    padding: 5px;
+    vertical-align: middle;
+}
+
+input[type="checkbox"], input[type="radio"] {
+    width: 33px;
+}
+
+
+.bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+    width: 100%;
+}
+
+/* ------------------------- */
+
+

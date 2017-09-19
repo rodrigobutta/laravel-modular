@@ -1,0 +1,56 @@
+
+@font-face {
+    font-family: 'privaoneproregular';
+    src: url('privaonepro-webfont.eot');
+    src: url('privaonepro-webfont.eot?#iefix') format('embedded-opentype'),
+         url('privaonepro-webfont.woff2') format('woff2'),
+         url('privaonepro-webfont.woff') format('woff'),
+         url('privaonepro-webfont.ttf') format('truetype'),
+         url('privaonepro-webfont.svg#privaoneproregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'privatwoproregular';
+    src: url('privatwopro-webfont.eot');
+    src: url('privatwopro-webfont.eot?#iefix') format('embedded-opentype'),
+         url('privatwopro-webfont.woff2') format('woff2'),
+         url('privatwopro-webfont.woff') format('woff'),
+         url('privatwopro-webfont.ttf') format('truetype'),
+         url('privatwopro-webfont.svg#privatwoproregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'privatwoitalicproregular';
+    src: url('privatwoitalicpro-webfont.eot');
+    src: url('privatwoitalicpro-webfont.eot?#iefix') format('embedded-opentype'),
+         url('privatwoitalicpro-webfont.woff2') format('woff2'),
+         url('privatwoitalicpro-webfont.woff') format('woff'),
+         url('privatwoitalicpro-webfont.ttf') format('truetype'),
+         url('privatwoitalicpro-webfont.svg#privatwoitalicproregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'privafourproregular';
+    src: url('privafourpro-webfont.eot');
+    src: url('privafourpro-webfont.eot?#iefix') format('embedded-opentype'),
+         url('privafourpro-webfont.woff2') format('woff2'),
+         url('privafourpro-webfont.woff') format('woff'),
+         url('privafourpro-webfont.ttf') format('truetype'),
+         url('privafourpro-webfont.svg#privafourpro-webfont') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'privathreeproregular';
+    src: url('privathreepro-webfont.eot');
+    src: url('privathreepro-webfont.eot?#iefix') format('embedded-opentype'),
+         url('privathreepro-webfont.woff2') format('woff2'),
+         url('privathreepro-webfont.woff') format('woff'),
+         url('privathreepro-webfont.ttf') format('truetype'),
+         url('privathreepro-webfont.svg#privathreepro-webfont') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

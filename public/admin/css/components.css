@@ -1,0 +1,520 @@
+
+
+/* COMPONENTE IMAGES*/
+
+    .form-input-image{
+        width: 300px;
+    }
+
+    .form-input-image-images{
+        width: 100%;
+        position: relative;
+        min-height: 50px;
+        background-color: #fff;
+        border: 1px solid #d2d2d2;
+    }
+        .form-input-image-images.png {
+            background-color: #fff;
+            background-image: -webkit-linear-gradient(bottom left, #cbcbcb 25%, transparent 25%, transparent 75%, #cbcbcb 75%, #cbcbcb), 
+            -webkit-linear-gradient(bottom left, #cbcbcb 25%, transparent 25%, transparent 75%, #cbcbcb 75%, #cbcbcb);
+            background-image: -o-linear-gradient(bottom left, #cbcbcb 25%, transparent 25%, transparent 75%, #cbcbcb 75%, #cbcbcb), 
+            -o-linear-gradient(bottom left, #cbcbcb 25%, transparent 25%, transparent 75%, #cbcbcb 75%, #cbcbcb);
+            background-image: linear-gradient(to top right, #cbcbcb 25%, transparent 25%, transparent 75%, #cbcbcb 75%, #cbcbcb), 
+            linear-gradient(to top right, #cbcbcb 25%, transparent 25%, transparent 75%, #cbcbcb 75%, #cbcbcb);
+            background-size:20px 20px;
+            background-position:0 0, 10px 10px;
+        }
+
+    .form-input-image-images-button-container{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+
+    .form-input-image-upload{
+        width: 100%;
+        position: relative;
+        min-height: 50px;
+        background-color: #fff;
+        border: 1px solid #d2d2d2;
+        display: flex;
+        align-items: center;
+    }
+    .form-input-image-upload-display{
+        padding-left: 15px;
+    }
+    .form-input-image-upload-display.empty{
+        opacity: 0.5;
+    }
+
+
+    .form-input-image-btn{
+        float: right;
+        margin-left: 5px;
+    }
+    .form-input-image-btn-change{
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+    .form-input-image-button-container{
+        position: absolute;
+        top: 9px;
+        right: 10px;
+    }
+    .form-input-image-images .form-input-image-image-preview{
+        width: 100%;
+    }
+
+    .form-input-image-label{
+        position: absolute;
+        color: #333;
+        font-size: 12px;
+        text-align: center;
+        width: 100%;
+        padding: 5px;
+        bottom: 0px;
+        z-index: 2;
+        left: 0px;
+    }
+    .form-input-image-hide{
+        overflow: hidden;
+        position: relative;
+        cursor: pointer;
+        background-color: #DDF;
+    }
+    .form-input-image-hide input[type="file"]{
+        cursor: pointer;
+        height: 100%;
+        position:absolute;
+        top: 0;
+        right: 0;
+        opacity: 0;
+        -moz-opacity: 0;
+        filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0)
+    }
+
+    .form-input-image-btn-back   {
+        display: none;
+    }
+
+    .form-input-image .progress.active .progress-bar {
+        -webkit-transition: none !important;
+        transition: none !important;
+    }
+
+    .form-input-image-hide{
+        overflow: hidden;
+        position: relative;
+        cursor: pointer;
+        background-color: #DDF;
+    }
+
+    .form-input-image-loading{
+        padding: 10px;
+        color: #333;
+        position: absolute;
+        width: 300px;
+        text-align: center;
+        height: 100%;
+        background-color: rgba(255,255,255,0.7);
+        z-index: 1;
+        opacity: 0;
+        left: 0px;
+        width: 100%;
+        -webkit-transition: opacity .15s ease;
+        -o-transition: opacity .15s ease;
+        transition: opacity .15s ease;
+    }
+    .form-input-image-loading i.fa{
+        top: 50%;
+        margin-top: -20px;
+        position: absolute;
+        left: 50%;
+        margin-left: -20px;
+    }
+
+/* FIN COMPONENTE IMAGES */
+
+
+
+
+
+/* COMPONENTE FILES */
+
+.form-input-file{
+    width: 300px;
+}
+
+.form-input-file-images{
+    width: 100%;
+    position: relative;
+    min-height: 50px;
+    background-color: #fff;
+    border: 1px solid #d2d2d2;
+}
+.form-input-file-images-button-container{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.form-input-file{
+    width: 100%;
+    position: relative;
+    min-height: 50px;
+    background-color: #fff;
+    border: 1px solid #d2d2d2;
+    display: flex;
+    align-items: center;
+}
+.form-input-file-display{
+    padding-left: 15px;
+    cursor: pointer;
+}
+.form-input-file-display:not(.empty):hover{
+    text-decoration: underline;
+}
+.form-input-file-display.empty{
+    opacity: 0.5;
+    cursor: default;
+}
+.form-input-file-btn{
+    float: right;
+    margin-left: 5px;
+}
+.form-input-file-btn-change{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.form-input-file-button-container{
+    position: absolute;
+    top: 9px;
+    right: 10px;
+}
+.form-input-file-images .form-input-file-image-preview{
+    width: 100%;
+}
+
+.form-input-file-label{
+    position: absolute;
+    color: #333;
+    font-size: 12px;
+    text-align: center;
+    width: 100%;
+    padding: 5px;
+    bottom: 0px;
+    z-index: 2;
+    left: 0px;
+}
+.form-input-file-hide{
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    background-color: #DDF;
+}
+
+.form-input-file-hide input[type="file"]{
+    cursor: pointer;
+    height: 100%;
+    position:absolute;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    -moz-opacity: 0;
+    filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0)
+}
+
+.form-input-file-btn-back   {
+    display: none;
+}
+
+.form-input-file .progress.active .progress-bar {
+    -webkit-transition: none !important;
+    transition: none !important;
+}
+
+.form-input-file-hide{
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    background-color: #DDF;
+}
+
+.form-input-file-loading{
+    padding: 10px;
+    color: #333;
+    position: absolute;
+    width: 300px;
+    text-align: center;
+    height: 100%;
+    background-color: rgba(255,255,255,0.7);
+    z-index: 1;
+    opacity: 0;
+    left: 0px;
+    width: 100%;
+    -webkit-transition: opacity .15s ease;
+    -o-transition: opacity .15s ease;
+    transition: opacity .15s ease;
+}
+.form-input-file-loading i.fa{
+    top: 50%;
+    margin-top: -20px;
+    position: absolute;
+    left: 50%;
+    margin-left: -20px;
+}
+
+/* FIN COMPONENTE FILES */
+
+
+
+/* COMPONENTE TABLE */
+
+    .form-table tbody tr{
+        cursor: pointer;
+
+    }
+
+/* FIN COMPONENTE TABLE */
+
+
+
+
+/* COMPONENTE IMAGES*/
+
+    .inline-input-image{
+        width: 300px;
+    }
+
+    .inline-input-image-container{
+        width: 119px;
+        position: absolute;
+        z-index: 9999;
+        height: 40px;
+        margin-top: 60px;
+        background-color: rgba(255,255,255,1);
+        -webkit-box-shadow: 0px 0px 3px 3px rgba(0,0,0,0.2);
+        -moz-box-shadow: 0px 0px 3px 3px rgba(0,0,0,0.2);
+        box-shadow: 0px 0px 3px 3px rgba(0,0,0,0.2);
+    }
+    .inline-input-image-container-buttons{
+        position: absolute;
+        top: 5px;
+        left: 2px;
+    }
+
+    .inline-input-image-upload{
+        width: 100%;
+        position: relative;
+        min-height: 50px;
+        background-color: #fff;
+        border: 1px solid #d2d2d2;
+        display: flex;
+        align-items: center;
+    }
+    .inline-input-image-upload-display{
+        padding-left: 15px;
+    }
+    .inline-input-image-upload-display.empty{
+        opacity: 0.5;
+    }
+
+
+    .inline-input-image-btn{
+        float: right;
+        margin-left: 5px;
+    }
+    .inline-input-image-btn-change{
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+    .inline-input-image-button-container{
+        position: absolute;
+        top: 9px;
+        right: 10px;
+    }
+    .inline-input-image-container .inline-input-image-image-preview{
+        width: 100%;
+    }
+
+    .inline-input-image-label{
+        position: absolute;
+        color: #333;
+        font-size: 12px;
+        text-align: center;
+        width: 100%;
+        padding: 5px;
+        bottom: 0px;
+        z-index: 2;
+        left: 0px;
+    }
+    .inline-input-image-hide{
+        overflow: hidden;
+        position: relative;
+        cursor: pointer;
+        background-color: #DDF;
+    }
+    .inline-input-image-hide input[type="file"]{
+        cursor: pointer;
+        height: 100%;
+        position:absolute;
+        top: 0;
+        right: 0;
+        opacity: 0;
+        -moz-opacity: 0;
+        filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0)
+    }
+
+    .inline-input-image-btn-back   {
+        display: none;
+    }
+
+    .inline-input-image .progress.active .progress-bar {
+        -webkit-transition: none !important;
+        transition: none !important;
+    }
+
+    .inline-input-image-hide{
+        overflow: hidden;
+        position: relative;
+        cursor: pointer;
+        background-color: #DDF;
+    }
+
+    .inline-input-image-loading{
+
+        position: relative;
+        width: 100%;
+        height: 50px;
+        left: 0px;
+
+    }
+
+/* FIN COMPONENTE IMAGES */
+
+
+
+
+
+
+
+
+
+.form-input-link{
+    position: relative;
+}
+.form-input-link-text{
+    padding-right: 40px;
+}
+.form-input-link-btn-search{
+    position: absolute;
+    right: 2px;
+    top: 2px;
+    z-index: 10;
+
+}
+.form-input-link .select2{
+    position: absolute;
+    z-index: 20;
+    top: 0px;
+    display: none;
+}
+
+
+
+
+
+
+.form-input-object-list .extra-field{
+    float: right;
+    height: 30px;
+    margin: 0px;
+    margin-right: 5px;
+    padding-left: 5px;
+}
+.form-input-object-list ul,
+.form-input-object-list ol {
+    margin: 0px;
+    padding: 0px;
+}
+.form-input-object-list ol>li{
+    list-style-type: none;
+    border-bottom: 1px solid rgba(0,0,0,.075);
+    padding: 4px;
+    padding-left: 10px;
+    padding-right: 5px;
+    padding-right: 0px;
+    border-right: 0px;
+    min-height: 30px;
+    line-height: 30px;
+    cursor: move;
+}
+
+
+
+
+
+
+/* apple checkbox swutcher*/
+
+input.toggle {
+  max-height: 0;
+  max-width: 0;
+  opacity: 0;
+}
+
+input.toggle + label {
+  display: inline-block;
+  position: relative;
+  box-shadow: inset 0 0 0px 1px #d5d5d5;
+  text-indent: -5000px;
+  height: 30px;
+  width: 50px;
+  border-radius: 15px;
+}
+
+input.toggle + label:before {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 30px;
+  width: 30px;
+  top: 0;
+  left: 0;
+  border-radius: 15px;
+  background: rgba(19, 191, 17, 0);
+  -moz-transition: .25s ease-in-out;
+  -webkit-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+input.toggle + label:after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 30px;
+  width: 30px;
+  top: 0;
+  left: 0px;
+  border-radius: 15px;
+  background: white;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2), 0 2px 4px rgba(0, 0, 0, 0.2);
+  -moz-transition: .25s ease-in-out;
+  -webkit-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+input.toggle:checked + label:before {
+  width: 50px;
+  background: #00a65a;
+}
+
+input.toggle:checked + label:after {
+  left: 20px;
+  box-shadow: inset 0 0 0 1px #f4f4f4, 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+

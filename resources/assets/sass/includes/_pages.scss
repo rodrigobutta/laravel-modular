@@ -1,0 +1,1271 @@
+.component {
+
+	&.category-intro {
+		.title {
+			font-size: 60px;
+			line-height: 1em;
+			font-weight: $font-weight-light;
+			padding-left: 0;
+			padding-right: 0;
+		}
+
+		.content {
+			.columns {
+				columns: 2;
+				width: 50%;
+				padding-right: 1%;
+				float: left;
+			}
+
+			.image {
+				width: 49.5%;
+				float: right;
+
+				img {
+					@include img-responsive;
+				}
+
+			}
+
+			p {
+				-webkit-margin-before: 0;
+			}
+
+		}
+
+		@media (max-width: $breakpoint-small) {
+			.title {
+				font-size: 10vw;
+				margin: 25px 0;
+			}
+
+			.content {
+				.columns {
+					float: none;
+					width: 100%;
+					padding-left: 1%;
+					padding-right: 1%;
+					margin-bottom: 1.5em;
+					columns:1;
+				}
+
+				.image {
+					float: none;
+					width: 100%;
+				}
+			}
+		}
+	}
+
+	&.section-top {
+		position: relative;
+		width: 100%;
+		padding-left: 0;
+		padding-right: 0;
+
+		.title {
+			font-size: 120px;
+			font-weight: $font-weight-bold;
+			color: $sullair-green;
+			line-height: 1em;
+			z-index: 300;
+			padding-left: 0;
+			padding-right: 0;
+		}
+
+		.copy {
+			width: 29%;
+			z-index: 300;
+		}
+
+		.image {
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			// max-width: 50%;
+			z-index: 100;
+
+			@include img-responsive;
+		}
+
+		@media (max-width: $breakpoint-small) {
+			.title {
+				font-size: 14vw;
+			    line-height: 0.8em;
+			    padding: 0 20px;
+			}
+
+			.copy {
+				width: 100%;
+				margin-top: 40px;
+				padding: 0 20px;
+			}
+
+			.image {
+				position: relative;
+			}
+		}
+	}
+
+	&.subpages {
+		width: 100%;
+		margin-bottom: 40px;
+		padding-left: 0;
+		padding-right: 0;
+		.page {
+			border-bottom: 1px solid $sullair-medium-grey2;
+			padding: 0;
+			transition: all 0.15s ease-in-out;
+			.wrapper {
+				margin-bottom: 0;
+			}
+
+			&:last-child {
+				border-bottom: none;
+			}
+
+			a {
+				font-size: 30px;
+				color: $sullair-dark-grey;
+				text-decoration: none;
+				display: block;
+				line-height: 1em;
+				padding: 30px 0;
+				transition: all 0.15s ease-in-out;
+
+				&:hover {
+					color: $sullair-green;
+				}
+
+				@media (max-width: $breakpoint-medium) {
+					padding-left: 20px;
+
+				}
+				@media (max-width: $breakpoint-small) {
+					font-size: 7vw;
+				}
+			}
+
+			&:hover {
+				background: $sullair-light-grey2;
+			}
+		}
+	}
+
+	&.nosotros {
+		.title {
+			font-size: 120px;
+			font-weight: $font-weight-bold;
+			color: $sullair-green;
+			margin-bottom: 40px;
+			line-height: 1em;
+		}
+
+		.subtitle {
+			font-size: 60px;
+			font-weight: $font-weight-light;
+			margin: 20px 0;
+			line-height: 1em;
+		}
+
+		.image {
+			img {
+				@include img-responsive;
+			}
+		}
+	}
+
+	&.hacemos, &.podemos {
+		.title {
+			font-size: 60px;
+			font-weight: $font-weight-light;
+		}
+		.text {
+			padding: 0;
+			margin-top: 40px;
+		}
+	}
+
+
+
+	&.energia-content {
+		.subtitle {
+			font-size: 60px;
+			font-weight: $font-weight-light;
+			line-height: 1em;
+
+			float: left;
+		}
+
+		.bulletpoints {
+			float: left;
+			margin-left: 160px;
+			font-size: 16px;
+
+			ul {
+				list-style: none;
+				margin: 0;
+				padding: 0;
+				display: table;
+				width: 250px;
+
+				li {
+					margin-bottom: 1.2em;
+					font-weight: $font-weight-roman;
+					display: table-row;
+					position: relative;
+
+					&:before {
+						display: table-cell;
+						width: 22px;
+						height: 10px;
+						background: white url(../img/pages/energia-bullets.jpg) no-repeat;
+						background-position: 0 27px;
+						content: '';
+					}
+
+					span {
+						margin: 20px 0 0 20px;
+						display: inline-block;
+					}
+				}
+			}
+
+			.cta {
+				padding: 10px 80px;
+				border-radius: 2em;
+				color: $sullair-green;
+				border: 1px solid $sullair-green;
+				text-decoration: none;
+				margin-top: 30px;
+				margin-left: 35px;
+				display: inline-block;
+
+				&:hover {
+					background-color: $sullair-green;
+					color: $sullair-white;
+				}
+			}
+		}
+
+		@media (max-width: $breakpoint-small) {
+			.subtitle {
+			    font-size: 10vw;
+			    line-height: 1.1em;
+
+				br{
+					display: none;
+				}
+			}
+
+			.bulletpoints {
+				margin-left: 0px;
+				.cta{
+					margin-left: 0;
+				}
+			}
+		}
+	}
+
+	&.page {
+		padding-left: 0;
+		padding-right: 0;
+
+		.title {
+			font-size: 120px;
+			font-weight: $font-weight-bold;
+			color: $sullair-green;
+			margin-bottom: 40px;
+			line-height: 1em;
+			padding-left: 0;
+			position: relative;
+			left: -5px;
+
+			@media  (max-width: $breakpoint-small) {
+				font-size: 17vw;
+			}
+		}
+
+		.subtitle {
+			font-size: 60px;
+			font-weight: $font-weight-light;
+			margin: 20px 0;
+			line-height: 1em;
+		}
+
+		.text {
+			padding: 0;
+		}
+
+		&.hacemos, &.podemos {
+			.text {
+				padding: 0 12px;
+			}
+		}
+
+		.columns-2 {
+			columns: 2;
+			column-gap: 60px;
+			margin: 20px 0;
+
+			p {
+				&:first-child {
+					margin-top: 0;
+				}
+			}
+
+			@media (max-width: $breakpoint-small) {
+				columns: 1;
+				padding: 0  20px;
+			}
+		}
+
+		&.proveedores {
+			position: relative;
+			.text{
+				width: 38%;
+			}
+
+			.buttons {
+				position: absolute;
+				top: 180px;
+				right: 0;
+				width: 30%;
+
+				a {
+					border-radius: 2em;
+					display: block;
+					padding: 10px 0;
+					color: $sullair-green;
+					text-decoration: none;
+					font-size: 18px;
+					border: 1px solid $sullair-green;
+					text-align: center;
+					margin-bottom: 24px;
+
+					&:hover{
+						background-color: $sullair-green;
+						color: $sullair-white;
+					}
+				}
+			}
+
+			.image {
+				margin-top: 130px;
+			}
+
+			@media (max-width: $breakpoint-small) {
+				.title {
+					font-size: 14vw;
+				}
+				.text {
+					width: 100%;
+				}
+
+				.buttons {
+					margin-top: 30px;
+					width: 100%;
+					position: initial;
+				}
+
+				.image {
+					margin-top: 30px;
+				}
+			}
+		}
+
+		&.energia {
+			.image {
+				margin: 40px 0;
+
+				img {
+					@include img-responsive;
+				}
+			}
+		}
+		// .subtitle{
+		// 	padding-left: 20px;
+		// }
+
+		&.cursos {
+			width: 75%;
+
+			@include clearfix;
+
+			.text {
+				width: 50%;
+				float: left;
+			}
+
+			.bulletpoints {
+				float: right;
+				width: 40%;
+
+				ul {
+					list-style: none;
+					margin: 0;
+					padding: 0;
+					display: table;
+					width: 320px;
+
+					li {
+						margin-bottom: 1.2em;
+						display: table-row;
+						position: relative;
+
+						&:before {
+							display: table-cell;
+							width: 22px;
+							height: 10px;
+							background: white url(../img/pages/energia-bullets.jpg) no-repeat;
+							background-position: 0 27px;
+							content: '';
+						}
+
+						span {
+							margin: 20px 0 0 20px;
+							display: inline-block;
+						}
+					}
+				}
+
+				.cta {
+					padding: 10px 80px;
+					border-radius: 2em;
+					color: $sullair-green;
+					border: 1px solid $sullair-green;
+					text-decoration: none;
+					margin-top: 30px;
+					margin-left: 35px;
+					display: inline-block;
+
+					&:hover {
+						background-color: $sullair-green;
+						color: $sullair-white;
+					}
+				}
+			}
+
+			@media (max-width: $breakpoint-small) {
+				width: 100%;
+				@include clearfix;
+				float: none;
+
+				.title {
+					font-size: 14vw;
+				}
+
+				.text, .bulletpoints {
+					width: 100%;
+					float: none;
+				}
+
+				.bulletpoints {
+
+					ul {
+						width: 100%;
+						padding: 0 20px;
+					}
+				}
+			}
+		}
+
+		&.cursos-sidebar {
+			width: 25%;
+
+			.cta {
+				padding: 10px 80px;
+				border-radius: 2em;
+				color: $sullair-green;
+				border: 1px solid $sullair-green;
+				text-decoration: none;
+				margin-top: 5px;
+				display: inline-block;
+				width: 100%;
+				text-align: center;
+
+				&:hover {
+					background-color: $sullair-green;
+					color: $sullair-white;
+				}
+			}
+
+			.bulletpoints {
+
+				ul {
+					list-style: none;
+					margin: 0;
+					padding: 0;
+					margin-top: 60px;
+
+					li {
+						position: relative;
+						margin-bottom: 24px;
+
+
+						&:before {
+							width: 23px;
+							height: 29px;
+							background: white url(../img/pages/ico-page.jpg) no-repeat;
+							content: '';
+							display: inline-block;
+							position: absolute;
+							left: 0;
+							top: 0;
+						}
+
+						a {
+							text-decoration: none;
+							color: $sullair-black;
+							display: inline-block;
+							width: 100%;
+							max-width: 270px;
+							padding-left: 40px;
+
+							&:hover {
+								font-weight: $font-weight-bold;
+							}
+						}
+					}
+				}
+			}
+
+			@media (max-width: $breakpoint-small) {
+				width: 100%;
+				float: none;
+				margin-top: 40px;
+
+				@include clearfix;
+
+				&>p {
+					padding-left: 12px;
+				}
+
+				.cta {
+					margin-left: 12px;
+					margin-right: 12px;
+					display: block;
+					width: auto;
+				}
+
+				.bulletpoints {
+					padding-left: 12px;
+				}
+			}
+		}
+
+		&.contacto {
+			width: 75%;
+			float: left;
+			@include clearfix;
+
+			.text {
+				a {
+					color: $sullair-black;
+					text-decoration: none;
+					font-weight: $font-weight-bold;
+
+					&:hover {
+						text-decoration: underline;
+					}
+				}
+			}
+
+			@media (max-width: $breakpoint-small) {
+				width: 100%;
+				float: none;
+				padding: 0px;
+				.title {
+					font-size: 15vw;
+				}
+				.text{
+					padding: 0 12px;
+				}
+			}
+		}
+
+		@media (max-width: $breakpoint-small) {
+			.title, .subtitle, .text {
+
+
+			}
+			.copy{
+				padding-left: 20px;
+			}
+			.title{
+				margin:0 0 10px 0;
+				padding: 0 12px;
+			}
+			.subtitle{
+				font-size: 12vw;
+				padding: 0 12px;
+			}
+		}
+
+		&.contacto-content {
+			@include clearfix;
+
+			.subtitle-1 {
+				font-size: 60px;
+				color: $sullair-green;
+				margin: 30px 0;
+				line-height: 1em;
+				@include clearfix;
+			}
+
+			.subtitle-2 {
+				font-size: 40px;
+				color: $sullair-green;
+				margin: 60px 0 30px;
+				line-height: 1em;
+				@include clearfix;
+			}
+
+			.location {
+				width: 45%;
+				margin-right: 5%;
+				float: left;
+				margin-top: 30px;
+				margin-bottom: 30px;
+				.type {
+					font-size: 26px;
+					margin-bottom: 20px;
+				}
+
+				.address {
+					margin: 20px 0;
+				}
+
+				.phone {
+
+				}
+
+				.state {
+					font-weight: $font-weight-bold;
+				}
+
+				.cta {
+					text-decoration: none;
+					color: $sullair-black;
+					margin-top: 20px;
+					font-size: .9em;
+					font-weight: $font-weight-bold;
+					display: inline-block;
+
+					&:hover {
+						text-decoration: underline;
+					}
+				}
+			}
+
+			@media (max-width: $breakpoint-small) {
+				padding: 0 12px;
+				.location{
+					width: 100%;
+				}
+			}
+		}
+
+		&.servicio-tecnico-content {
+			.title {
+				font-size: 60px;
+				font-weight: $font-weight-light;
+				margin: 20px 0;
+				line-height: 1em;
+				color: $sullair-black;
+			}
+			p {
+				a {
+					color: $sullair-green;
+					text-decoration: none;
+
+					&:hover {
+						text-decoration: underline;
+					}
+				}
+			}
+			@media (max-width: $breakpoint-small) {
+				.title{
+					font-size: 12vw;
+				}
+			}
+		}
+
+		&.mant-plan, &.aceite-sullube, &.compressor-care {
+			h4 {
+				font-size: 30px;
+				color: $sullair-green;
+				font-weight: $font-weight-light;
+			}
+		}
+
+		&.auditoria {
+			width: 50%;
+
+			ul {
+				padding-left: 20px;
+			}
+			@media (max-width: $breakpoint-small) {
+				width: 100%;
+				padding: 0 20px;
+			}
+		}
+
+		&.campaign {
+			margin: 80px 0;
+			width: 75%;
+
+			.title {
+				font-size: 48px;
+				color: $sullair-black;
+				font-weight: $font-weight-light;
+				line-height: 1em;
+				margin: 0 0 35px;;
+			}
+
+			.subtitle {
+				font-size: 26px;
+				color: $sullair-black;
+				font-weight: $font-weight-light;
+				line-height: 1em;
+				margin: 0 0 45px;
+			}
+
+			@media (max-width: $breakpoint-small) {
+				width: 100%;
+			}
+		}
+
+		&.mant-plan {
+			@media (max-width: $breakpoint-small) {
+				padding-left: 12px;
+			}
+		}
+	}
+	&.contacto-sidebar {
+		width: 25%;
+		float: right;
+		text-align: right;
+
+		.subtitle {
+			color: $sullair-green;
+			font-weight: $font-weight-light;
+			font-size: 30px;
+		}
+
+		.phone {
+			text-decoration: none;
+			font-weight: $font-weight-light;
+			font-size: 37px;
+			color: $sullair-green;
+		}
+
+		.cta {
+			padding: 10px 60px;
+			border-radius: 2em;
+			color: $sullair-green;
+			border: 1px solid $sullair-green;
+			text-decoration: none;
+			margin-top: 30px;
+			display: inline-block;
+			width: 100%;
+			max-width: 230px;
+			text-align: center;
+
+			&:hover {
+				background-color: $sullair-green;
+				color: $sullair-white;
+			}
+		}
+
+		@media (max-width: $breakpoint-small) {
+			width: 100%;
+			float: none;
+			padding: 0 20px;
+			text-align: center;
+			margin-bottom: 60px;
+			.phone {
+				margin-left: 0px;
+			}
+			.subtitle{
+				padding: 0;
+			}
+		}
+	}
+
+	&.cursos-content-1 {
+		width: 75%;
+
+		.subtitle {
+			margin: 0 0 20px;
+		}
+
+		@media (max-width: $breakpoint-small) {
+			width: 100%;
+
+			.text {
+				.subtitle {
+					padding-left: 0;
+				}
+			}
+		}
+	}
+
+	&.cursos-content-2 {
+		width: 75%;
+		margin-bottom: 60px;
+
+		.subtitle {
+			margin: 0 0 20px;
+		}
+
+		.copy {
+			font-weight: $font-weight-roman;
+			font-size: 14px;
+		}
+
+		.curso {
+			width: 32%;
+			float: left;
+			margin-top: 40px;
+			margin-right: 60px;
+
+			.title {
+				font-size: 24px;
+				color: $sullair-black;
+				font-weight: $font-weight-light;
+			}
+
+			.fechas {
+				list-style: none;
+				margin: 0;
+				padding: 0;
+				margin: 30px 0;
+
+				li {
+					font-weight: $font-weight-bold;
+					margin: 10px 0;
+
+					&:before {
+						display: inline-block;
+						content: '';
+						background: transparent url(../img/pages/energia-bullets.jpg) no-repeat;
+						width: 21px;
+						height: 10px;
+						margin-right: 20px;
+					}
+				}
+			}
+
+			.cta {
+				border-radius: 2em;
+				border: 1px solid $sullair-green;
+				padding: 10px 30px;
+				font-weight: $font-weight-bold;
+				text-decoration: none;
+				font-size: 12px;
+				color: $sullair-green;
+
+				&:hover{
+					background-color: $sullair-green;
+					color: $sullair-white;
+				}
+			}
+		}
+
+		@media (max-width: $breakpoint-small) {
+			width: 100%;
+
+			.curso {
+				width: 100%;
+				padding: 0 20px;
+				margin: 0;
+				margin-bottom: 40px;
+				.fechas{
+					padding-left: 20px;
+				}
+				.title {
+					padding: 0 20px;
+				}
+
+				.cta {
+					display: inline-block;
+    				text-align: center;
+    				line-height: 1em;
+    				margin-left: 20px;
+				}
+			}
+		}
+	}
+}
+.container-table-mobile{
+    display: block;
+    width: 100%;
+    position: relative;
+
+    float: left;
+    .bx-controls{
+    	display: none;
+    }
+	.row-static-mobile{
+		float:left;
+		width: 60%;
+
+		.column{
+			display: block;
+			margin-bottom: 20px;
+			padding-left: 20px;
+			font-size: 15px;
+			padding-bottom: 20px;
+			border-bottom: 1px solid #d3d3d3;
+		    white-space: nowrap;
+		    overflow: hidden;
+
+		    a {
+		    	text-decoration: none;
+		    	color: $sullair-black;
+		    }
+		}
+		.column-title{
+		    height: 60px;
+		    padding: 20px 0 0 20px;
+		    border-top: 1px solid #d3d3d3;
+		    border-bottom: 1px solid #d3d3d3;
+		    color: #008657;
+		    font-size:19px;
+		}
+	}
+	.bx-wrapper{
+		float: left;
+		width: 40%;
+
+		.row-variable-mobile{
+			span{
+				height: 60px;
+				padding: 10px 0;
+				border-top:1px solid #d3d3d3;
+				display: block;
+				padding-right: 20px;
+				margin-bottom: 20px;
+				border-top: 1px solid #d3d3d3;
+		    	border-bottom: 1px solid #d3d3d3;
+			    white-space: nowrap;
+			    overflow: hidden;
+			    padding-left: 20px;
+			    line-height: 42px;
+			}
+			p{
+				margin: 0 0 20px 0;
+				padding-bottom: 20px;
+		    	border-bottom: 1px solid #d3d3d3;
+		    	padding-left: 20px;
+			    white-space: nowrap;
+			    overflow: hidden;
+			    min-height: 42px;
+			}
+		}
+	}
+	.slider-table-container{
+		float: left;
+		width: 30%;
+
+	}
+}
+#intranet_full_map {
+	width: 100%;
+	height: 500px;
+}
+
+.login-page {
+	border-top: 3px solid $sullair-green;
+
+	background: $sullair-white url(../img/login-maquina.png) no-repeat 80% 150px;
+
+	.row.logo {
+		margin: 40px 0 0;
+	}
+
+	section.section-main {
+		margin-top: 0;
+	}
+	.supertitle {
+		font-size: 188px;
+		line-height: 1em;
+		margin: 0;
+	}
+}
+
+.wrapper {
+	&.auditoria1 {
+		margin-top: 0;
+
+		@include clearfix;
+
+		.image {
+			width: 50%;
+			float: left;
+
+			img {
+				@include img-responsive;
+			}
+		}
+
+		.text {
+			width: 50%;
+			float: left;
+
+			.title {
+				font-size: 60px;
+				color: $sullair-black;
+				font-weight: $font-weight-light;
+				line-height: 1em;
+				margin-bottom: 20px;
+			}
+
+			.columns {
+				.col {
+					width: 50%;
+					float: left;
+					font-size: 18px;
+					// font-weight: $font-weight-roman;
+
+					&.left {
+						padding-right: 12px;
+					}
+
+					&.right {
+						padding-left: 12px;
+					}
+				}
+			}
+		}
+	}
+
+	&.auditoria2 {
+		margin-top: 200px;
+
+		.columns {
+			.col {
+				width: 50%;
+				float: left;
+				font-size: 18px;
+
+				.title {
+					font-size: 60px;
+					color: $sullair-black;
+					font-weight: $font-weight-light;
+					line-height: 1em;
+					margin-bottom: 60px;
+				}
+
+				ul {
+					list-style: none;
+					margin: 0;
+					padding: 0;
+
+					li {
+						display: block;
+						margin: 20px 0 20px;
+						padding-left: 30px;
+						position: relative;
+						max-width: 450px;
+						@include clearfix;
+
+						&:before {
+							content: "\f00c";
+							font-family: 'FontAwesome';
+							position: absolute;
+							left: 0;
+							top: 0;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	&.auditoria3 {
+		margin-top: 130px;
+		img {
+			@include img-responsive;
+		}
+	}
+
+	&.auditoria4 {
+		margin-top: 150px;
+		margin-bottom: 100px;
+
+		.columns {
+			.col {
+				width: 50%;
+				float: left;
+				max-width: 560px;
+
+				.title {
+					font-size: 60px;
+					color: $sullair-black;
+					font-weight: $font-weight-light;
+					line-height: 1em;
+					margin-bottom: 60px;
+				}
+
+				.subtitle {
+					font-size: 22px;
+					font-weight: $font-weight-roman;
+				}
+
+				&.left {
+					padding-right: 30px;
+				}
+
+				&.right {
+					padding-left: 30px;
+
+					ul {
+						list-style: none;
+						margin: 0;
+						padding: 0;
+
+						li {
+							display: block;
+							margin: 20px 0 20px;
+							padding-left: 30px;
+							position: relative;
+							max-width: 450px;
+							@include clearfix;
+
+							&:before {
+								content: "\f00c";
+								font-family: 'FontAwesome';
+								position: absolute;
+								left: 0;
+								top: 0;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	@media (max-width: $breakpoint-small) {
+		&.auditoria1, &.auditoria2, &.auditoria3, &.auditoria4 {
+			margin-bottom: 25 !important;
+			margin-top: 0;
+			.columns {
+				.col {
+					width: 100%;
+					float: none;
+					max-width: none;
+					padding: 0 20px !important;
+					.title {
+						font-size: 10vw;
+						margin-bottom: 25px;
+					}
+				}
+			}
+
+		}
+
+		&.auditoria1 {
+			.image, .text{
+				width: 100%;
+				float: none;
+				max-width: none;
+			}
+
+			.image {
+				display: none;
+			}
+
+			.text {
+				.title {
+					padding: 0 20px !important;
+					font-size: 10vw;
+				}
+
+				.columns {
+					.col {
+						width: 100%;
+						float: none;
+						max-width: none;
+						padding: 0 20px !important;
+						p{
+							font-size: 15px;
+							line-height: 1.46666em;
+						}
+					}
+
+				}
+			}
+		}
+		&.auditoria2{
+			.columns{
+				.col{
+					.title{
+						font-size: 10vw;
+					}
+				}
+			}
+		}
+
+	}
+}
+
+.hero {
+	&.auditoria {
+		max-height: 760px;
+
+		.title {
+			font-size: 120px;
+			line-height: 1em;
+		}
+
+		.subtitle {
+			font-size: 26px;
+			margin-top: 30px;
+		}
+
+		@media (max-width: $breakpoint-small) {
+			height: 500px;
+			background-size: cover;
+			background-position: 62% 50%;
+
+			.title {
+				font-size: 16vw;
+			}
+
+			.subtitle {
+				font-size: 3vw;
+				padding-left: 20px;
+			}
+		}
+	}
+}
+
+.equipos-container{
+	.image{
+		height: 125px;
+		width: 100%;
+		background-size: auto 100% ;
+		background-repeat: no-repeat;
+		background-position: left;
+	}
+	@media (max-width: $breakpoint-small) {
+		padding-top: 20px;
+		.component.h2{
+			margin-bottom:20px;
+		}
+		.image{
+			background-size: contain;
+		    background-repeat: no-repeat;
+		    background-position: center center;
+		}
+		.text{
+			text-align: center;
+		}
+	}
+}
+
+
+

@@ -1,0 +1,29 @@
+@mixin clearfix() {
+    clear: both;
+    &:before,
+    &:after {
+        content: " "; // 1
+        display: table; // 2
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+@mixin box-sizing($boxmodel) {
+	-webkit-box-sizing: $boxmodel;
+	-moz-box-sizing: $boxmodel;
+	box-sizing: $boxmodel;
+}
+
+@mixin img-responsive($display: block) {
+  display: $display;
+  max-width: 100%;
+  height: auto;
+}
+
+@mixin box-shadow($x:0, $y:0, $blur: 0, $spread: 0, $color: #000) {
+  -moz-box-shadow:    $x $y $blur $spread $color;
+  -webkit-box-shadow: $x $y $blur $spread $color;
+  box-shadow:         $x $y $blur $spread $color;
+}

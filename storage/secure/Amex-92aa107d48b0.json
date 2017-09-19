@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "amex-176200",
+  "private_key_id": "92aa107d48b037234f2a5384f2eb633a4fc8a488",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCwDSTR3/jrZ8GN\nNBFlasV+IbhagDTb/3snU/+GhuZQ2f4pj//Nql8fJ3cfQMuQHlUzLfCGAot4MEdQ\nr/VDqPrCgCQ8ekSPnIPeDCK0hep88PGRPGF5UK1Xphw2WOYVZNlU3i96RzB2/4I2\nkbqVuV2k3GTJhRfi3aeO6TlzBej9BwAsLoVrn39tK+XOHJGjw5+DE0Tz6meRc92X\nWsdSVGlSpQ/f6LFuTRYsT5DtHbnsbKJNf/TamL9zJvQxmRCRtc+RUhxTCpOsCGZM\n4XLDM2xrYo/66ZpCegGuIJ6cHxTcTyWd9xyFn+vZe0M/rJhBs+sZfa1hjYY7sFeP\nNhvnFCwjAgMBAAECggEAVD+t/5u5sNnBx7ODoa9zXFWBthmFckR0KJFrhnLXFBkG\nJtio90CRbcTCnluxLsI9TpUs9cyQ9s7Pyf6ylhLvEZYmASUX20vw1RmkoBQ371uU\nlsa49MfVdEzjUmS/krxkvtbnDJK10DSdGUUq78y50hPATanaEPC2506X9gH9idv9\nGi09F3DRPJwtacJGkIaJEAM6CGaf7SeoSDwFalOTWQ6lCgPRfb1T84pFu8/cleuL\nNLy+3Lw5DLXa0h0fsu8HENdc7tvZIFnD2GYrcYhMpE7xukm1CzHOVMf1BkQFVRM2\nHMGf4gEg1uihkI3FqMocrhkBkdOMtdL7bjCOUDVy2QKBgQDUpLL9uW1AZDezLknH\nNC3kigehyuwkjj5brKnh0jjqvLgqIL3Y8fYCOBQ3NzKV6YfWFErssao37uzW2ON4\nUBBWiCqoRyAKTojb5+6Bh/xhOhyaDybnzTDjoz7qrx3KbU8q3Wt9ciDSJyiVyaB0\nvXt1wR9/QoRBq3iizhkz4T8wWwKBgQDT8nV/8bfunQhXx/MDndqV22aLRGGvDwxX\nALDbyLjbI/R2ocEqCsAsk9/ae7wQScKwcZx4x5Z6Fu0h/Lq471tyMDqoXwWCk45W\ne5u403Q2grYDO3X5VsmICZTZbVdkrwwqLVv5nnC/aNsHut8whvYBvIJol2axVuG/\nYXOGHkO92QKBgQCHrW7npWCoLUm88lPw3sJJiCjGewuhZ4EyTUE37UKTxEZd2vZH\nblthnxaHBJkqPg+F8Py9eb76YWCM1WaOZceG7usI5Bj1epaoeZwc2f+WqdWGFxTj\n4nDHTmnepE2F06kn2I+1QxTeAk5LBJN06VHVGJxYPsDUhew7NPWvvJDs8QKBgAyU\njajkfhhptb8QHTqPuhO/DB0kF/A+ImtfnR/OkDphrfcEruSB8toyhM0BHy6QUkAK\n3lDE+AeTKMwlpien/XOPrUulKDyR6Zb0i0+zLWi25XrXoq8EGb47Y1xsgw103nH6\nc0UjxGl4HdgdnXXR7PQ5bjwrEGtiTs//Rs4lKbwxAoGARBzJl6AogMzrFZOh9srB\nAwyUjB75msEyTBen4mGOFus4KTIcx2yBrHZbsEtndhpur7QLmZeQMjA5vBu+PabR\nyucAtxMuONy7z1Bn8w05kRLgTKtJIvxhMMbqK2duavyUaW6vg7qkvq+gmxd5LQ1X\n4GEmbTRNqrYg/IjpFpbPt0g=\n-----END PRIVATE KEY-----\n",
+  "client_email": "admin-dashboard@amex-176200.iam.gserviceaccount.com",
+  "client_id": "116682181621404751056",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/admin-dashboard%40amex-176200.iam.gserviceaccount.com"
+}

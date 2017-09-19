@@ -1,0 +1,104 @@
+@import "vendor/bootstrap/variables";
+@import "vendor/bootstrap/mixins";
+@import "_variables";
+
+
+
+#intranet_portfolio_category{
+
+
+     /* highlight col-* */
+     .grid [class*='col-'] {
+        // background-color: #cceeee;
+        background-clip: content-box;
+        margin-bottom: 50px;
+
+    }
+
+
+    .grid-item{
+        position: relative;
+        background-color: $brand-lighter;
+
+        img{
+            width: 94%;
+            left: 3%;
+            position: relative;
+        }
+
+        h2.title{
+            width: 100%;
+            text-align: center;
+            margin: 0px;
+            padding: 10px 10px;
+            font-size: 1em;
+            font-weight: 500;
+            color: $brand-darker;
+            text-transform: uppercase;
+        }
+
+
+        h3.job{
+            font-size: 1em;
+            text-align: center;
+            padding: 10px;
+            margin: 0px;
+            line-height: 1.1em;
+            min-height: 55px;
+            font-weight: 500;
+            color: $brand-primary;
+        }
+
+        .overlay{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+            background-color: rgba(255,255,255,0.75);
+            z-index: 1;
+            opacity: 0.25;
+            @include transition(.17s);
+
+            // &:before {
+            //     content: "\f25a";
+            //     font-family: FontAwesome;
+            //     font-style: normal;
+            //     font-weight: normal;
+            //     text-decoration: inherit;
+            //     position: absolute;
+            //     top: 30%;
+            //     text-align: center;
+            //     width: 100%;
+            //     font-size: 2.5em;
+            //     color: #e30711;
+            // }
+
+        }
+
+        a{
+            display: block;
+            -webkit-box-shadow: 0 0.125em 0.125em 0 rgba(0, 0, 0, 0.125);
+            -moz-box-shadow: 0 0.125em 0.125em 0 rgba(0, 0, 0, 0.125);
+            -ms-box-shadow: 0 0.125em 0.125em 0 rgba(0, 0, 0, 0.125);
+            -o-box-shadow: 0 0.125em 0.125em 0 rgba(0, 0, 0, 0.125);
+            box-shadow: 0 0.125em 0.125em 0 rgba(0, 0, 0, 0.125);
+        }
+
+
+
+        &:hover{
+            .overlay{
+                opacity: 0;
+            }
+
+
+        }
+
+    }
+
+
+
+
+
+}

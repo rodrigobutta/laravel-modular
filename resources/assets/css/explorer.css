@@ -1,0 +1,10 @@
+header .wrapper .logo{
+	background: transparent url('../img/logo.png') no-repeat;
+	background-size: contain;
+}
+
+header .wrapper .logo svg{
+	width: 249px;
+	height: 16px;
+	display: none;
+}

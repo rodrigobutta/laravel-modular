@@ -1,0 +1,403 @@
+@import "vendor/bootstrap/variables";
+@import "vendor/bootstrap/mixins";
+@import "_variables";
+
+
+
+#intranet_home{
+
+
+
+    .intranet-cover {
+        text-align: center;
+        margin-bottom: 10em;
+        float: left;
+        width: 100%;
+        height: 100vh;
+        display: table;
+        position: relative;
+        z-index: 20;
+        color: $brand-black;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size:cover;
+        @media screen and (max-width: $screen-sm) {
+            background-position: center center;
+        }
+
+
+
+        #home_main_cover_logo{
+
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            width: 300px;
+            background-color: #fff;
+            padding: 20px;
+
+            -webkit-box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.24);
+            -moz-box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.24);
+            box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.24);
+
+
+
+        }
+
+        #home_main_text{
+            /* display: table-cell; */
+            position: absolute;
+            bottom: 0px;
+            /* vertical-align: bottom; */
+            color: #ffffff;
+            font-size: 3em;
+            font-family: "Lato", sans-serif;
+            line-height: 1.3;
+            font-weight: bold;
+            color: #ffffff;
+            padding-left: 60px;
+            padding-right: 20px;
+            /* padding-bottom: 40px; */
+            background-color: #e30711;
+            text-shadow: 2px 2px 1px rgba(0, 0, 0, .08);
+
+            strong{
+                text-transform: uppercase;
+                font-weight: normal;
+                color: #ffffff;
+                // background-color: $brand-primary;
+                // padding: 0px 20px 0px 20px;
+                padding: 0px;
+            }
+
+        }
+
+
+
+    }
+
+
+
+
+
+
+
+
+    #intranet_slogan {
+        float: left;
+        width: 100%;
+        height: 70vh;
+        display: table;
+        position: relative;
+        z-index: 20;
+        color: $brand-black;
+        background-size: cover;
+        background-position-y: -20px;
+        margin-bottom: 30px;
+        margin-top: 42px;
+        @media screen and (max-width: $screen-sm) {
+            background-position: top left;
+            height: 30vh;
+            background-size: 180%;
+        }
+
+        .intranet-full-wrapper {
+            height: 70vh;
+            display: table;
+
+            width: 100%;
+            @media screen and (max-width: $screen-sm) {
+                padding-top: 0em;
+                height: auto;
+                margin-top: 90px;
+            }
+
+            .intranet-full-wrapper-inner {
+                display: table-cell;
+                vertical-align: middle;
+                top: -40px;
+                position: relative;
+                // text-align: center;
+                color: $brand-white;
+
+                a {
+                    color: rgba(255,255,255,.7);
+                    border-bottom: 1px solid rgba(255,255,255,.3);
+                    &:hover {
+                        color: rgba(255,255,255,1);
+                        border-bottom: 1px solid rgba(255,255,255,1);
+                    }
+                }
+                > h1 {
+                    font-size: 36px;
+                    font-weight: normal;
+                    // text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.08);
+                    display: inline-block;
+                    background-color: $brand-black;
+                    padding: 5px 15px 5px 15px;
+                    text-transform: uppercase;
+                    color: $brand-white;
+                    @media screen and (max-width: $screen-sm) {
+                        font-size: 22px;
+                    }
+                }
+
+                > h2 {
+                    margin: 0;
+                    letter-spacing: 4px;
+                    line-height: 1.5;
+                    font-size: 16px;
+                    font-weight: 500;
+                    text-transform: uppercase;
+                    position: relative;
+                    color: $brand-white;
+                    // text-shadow: 2px 2px 1px rgba(0, 0, 0, .08);
+                    @media screen and (max-width: $screen-sm) {
+                        letter-spacing:3px;
+                    }
+
+                }
+            }
+            .btn {
+                color: $brand-white;
+                text-shadow: 2px 2px 1px rgba(0, 0, 0, .08);
+                &:hover,&:active,&:focus {
+                    background: $brand-primary;
+                    border-color: $brand-primary;
+                }
+            }
+        }
+    }
+
+
+
+// #intranet_clients{
+// 	background-color: $brand-primary;
+// }
+
+
+    #intranet_split {
+        float: left;
+        width: 100%;
+        height: 400px;
+        display: table;
+        position: relative;
+        z-index: 20;
+        color: $brand-black;
+        background-size: auto 100%;
+        background-position: center right;
+        background-repeat: no-repeat;
+
+        margin-top: 60px;
+        background-color: $brand-gray-medium;
+
+        @media screen and (max-width: $screen-sm) {
+            background-position: left;
+            margin-top: -40px;
+            background-size: cover;
+            height: 190px;
+        }
+
+        .intranet-full-wrapper {
+            height: 350px;
+            display: table;
+
+            width: 100%;
+            @media screen and (max-width: $screen-sm) {
+                padding-top: 0em;
+                height: auto;
+            }
+
+            .intranet-full-wrapper-inner {
+                display: table-cell;
+                vertical-align: middle;
+                top: -10px;
+                position: relative;
+                // text-align: center;
+                color: $brand-white;
+
+                a {
+                    color: rgba(255,255,255,.7);
+                    border-bottom: 1px solid rgba(255,255,255,.3);
+                    &:hover {
+                        color: rgba(255,255,255,1);
+                        border-bottom: 1px solid rgba(255,255,255,1);
+                    }
+                }
+                > h1 {
+                    font-size: 36px;
+                    font-weight: normal;
+                    // text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.08);
+                    display: inline-block;
+                    background-color: #e30711;
+                    padding: 5px 15px 5px 15px;
+                    text-transform: uppercase;
+                    color: $brand-white;
+                    @media screen and (max-width: $screen-sm) {
+                        font-size: 30px;
+                    }
+                }
+
+                > h2 {
+                    margin: 0;
+                    letter-spacing: 4px;
+                    line-height: 1.5;
+                    font-size: 16px;
+                    font-weight: 500;
+                    text-transform: uppercase;
+                    position: relative;
+                    color: $brand-black;
+                    // text-shadow: 2px 2px 1px rgba(0, 0, 0, .08);
+                    @media screen and (max-width: $screen-sm) {
+                        letter-spacing:3px;
+                    }
+
+                }
+            }
+            .btn {
+                color: $brand-white;
+                text-shadow: 2px 2px 1px rgba(0, 0, 0, .08);
+                &:hover,&:active,&:focus {
+                    background: $brand-primary;
+                    border-color: $brand-primary;
+                }
+            }
+        }
+    }
+
+
+
+
+
+    #intranet_emprendimientos {
+        float: left;
+        width: 100%;
+        height: 450px;
+        display: table;
+        position: relative;
+        z-index: 20;
+        color: $brand-black;
+        background-size: auto 100%;
+        background-position: center right;
+        background-repeat: no-repeat;
+
+        @media screen and (max-width: $screen-sm) {
+            background-position: left center;
+        }
+
+        .intranet-full-wrapper {
+            height: 350px;
+            display: table;
+
+            width: 100%;
+            @media screen and (max-width: $screen-sm) {
+                padding-top: 0em;
+                height: auto;
+            }
+
+            .intranet-full-wrapper-inner {
+                display: table-cell;
+                vertical-align: middle;
+                top: -10px;
+                position: relative;
+                // text-align: center;
+                color: $brand-white;
+
+                a {
+                    color: rgba(255,255,255,.7);
+                    border-bottom: 1px solid rgba(255,255,255,.3);
+                    &:hover {
+                        color: rgba(255,255,255,1);
+                        border-bottom: 1px solid rgba(255,255,255,1);
+                    }
+                }
+                > h1 {
+                    font-size: 36px;
+                    font-weight: normal;
+                    // text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.08);
+                    display: inline-block;
+                    background-color: #e30711;
+                    padding: 5px 15px 5px 15px;
+                    text-transform: uppercase;
+                    color: $brand-white;
+                    @media screen and (max-width: $screen-sm) {
+                        font-size: 30px;
+                    }
+                }
+
+                > h2 {
+                    margin: 0;
+                    letter-spacing: 4px;
+                    line-height: 1.5;
+                    font-size: 16px;
+                    font-weight: 500;
+                    text-transform: uppercase;
+                    position: relative;
+                    color: $brand-black;
+                    // text-shadow: 2px 2px 1px rgba(0, 0, 0, .08);
+                    @media screen and (max-width: $screen-sm) {
+                        letter-spacing:3px;
+                    }
+
+                }
+            }
+            .btn {
+                color: $brand-white;
+                text-shadow: 2px 2px 1px rgba(0, 0, 0, .08);
+                &:hover,&:active,&:focus {
+                    background: $brand-primary;
+                    border-color: $brand-primary;
+                }
+            }
+        }
+    }
+
+
+
+
+
+    .intranet-tags {
+        font-size: 16px;
+        font-weight: normal;
+        // color: #e30711;
+        line-height: 20px;
+        padding: 0px;
+        margin: 0px;
+        list-style-type: none;
+        li{
+            margin-right: 5px;
+            padding: 5px;
+            padding-left: 10px;
+            padding-right: 10px;
+            background-color: $brand-primary;
+            display: inline-block;
+            color: $brand-white;
+            border-radius: 2px;
+
+        }
+        strong{
+            font-size: 20px;
+            position: relative;
+            top: 1px;
+            // padding-left: 10px;
+            padding-right: 2px;
+        }
+
+    }
+
+
+
+
+    #home_main_text{
+        position: absolute;
+        left: 0px;
+    }
+
+
+
+
+
+
+}
+
+

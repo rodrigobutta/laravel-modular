@@ -1,0 +1,818 @@
+a:hover {
+    text-decoration: none;
+}
+ul, ol {
+    /*margin: 0px;*/
+    padding: 0px;
+    padding-left: 15px;
+}
+
+div.categories-sortable-list,
+div.form-input-object-list {
+    overflow: auto !important;
+}
+
+.flash_message{
+    top:0;
+    width:100%;
+    position:absolute;
+    z-index:10000;
+    border:none;
+    border-radius:0
+}
+
+ul.tree {
+    list-style: none;
+    padding: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #fff;
+    line-height: 1.2;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 0px;
+    /*border-radius: 4px;*/
+   /* -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;*/
+}
+
+ul.tree li{
+    list-style: none;
+    padding: 5px;
+}
+ul.tree label {
+    font-weight: normal;
+    position: relative;
+}
+ul.tree label input {
+    position: relative;
+    top: 2px;
+    left: -5px;
+}
+
+
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+    background-color: #e4e4e4;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    cursor: default;
+    float: left;
+    margin-right: 5px;
+    margin-top: 5px;
+    padding: 0 5px;
+    color: #555;
+}
+.select2-container--default .select2-selection--multiple {
+    height: auto;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: 32px;
+}
+
+
+
+
+
+.categories-sortable-list > ol{
+    padding-left: 0px;
+}
+.categories-sortable-list > ol li{
+    list-style-type: none;
+    border-bottom: 1px solid rgba(0,0,0,.075);
+    padding: 4px;
+    padding-left: 10px;
+    padding-right: 0px;
+    border-right: 0px;
+    min-height: 30px;
+    line-height: 30px;
+}
+.categories-sortable-list > ol.ui-sortable li{
+    cursor: move;
+}
+.categories-sortable-list > ol li .category-options {
+    display: none;
+}
+.categories-sortable-list > ol li .info:hover .category-options {
+    display: block;
+}
+.categories-sortable-list > ol li .aditional.tasks .item .btn-group{
+    display: none;
+}
+.categories-sortable-list > ol li .aditional.tasks .item:hover .btn-group {
+    display: block;
+}
+
+/*el primero*/
+.categories-sortable-list > ol > li > .info{
+    background-color: #ddd;
+    padding: 2px;
+}
+.categories-sortable-list > ol > li > .info .category-name{
+    font-size: 1.25em;
+}
+.categories-sortable-list > ol li .info{
+    border-left: 3px solid #ccc;
+    border-bottom: 1px dashed #ccc;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 5px;
+}
+.categories-sortable-list > ol li .info:hover{
+}
+.categories-sortable-list .list-group-item > ol > li{
+    min-height: 50px;
+    padding-left: 0px;
+    border-bottom: 0px;
+}
+.categories-sortable-list > ol > li{
+    border-bottom: #555;
+}
+.categories-sortable-list > ol > li > div > span > a > small{
+    font-weight: normal;
+}
+.categories-sortable-list  ol {
+    padding-left: 20px;
+}
+.categories-sortable-list  ol{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.categories-sortable-list > ol{
+    padding: 0px;
+    margin-top: 0px;
+}
+
+.categories-sortable-list .list-group-item {
+     border: 0px solid #ddd;
+}
+/*.categories-sortable-list .list-group-item::before{
+    font-family: FontAwesome;
+    position: absolute;
+    left: 8px;
+    top: 4px;
+    color: #111;
+    font-size: 0.8em;
+}
+*/
+.categories-sortable-list .list-group-item.collapsed {
+     height: 50px;
+}
+/*
+.categories-sortable-list .list-group-item.collapsed::before{
+    content: "\f292";
+}*/
+
+
+
+/* pagina de categorias tree, por lo menos en task*/
+p.category-name{
+    font-size: 1.15em;
+    font-weight: bold;
+    margin: 0px;
+}
+.category-options{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+p.aditional{
+    line-height: 1em;
+    color: #000;
+    margin: 0px;
+    position: relative;
+    padding: 3px;
+    padding-left: 25px;
+    display: none;
+}
+p.aditional a,
+p.aditional span,
+p.aditional wrapper{
+    padding: 3px;
+}
+p.aditional .icon{
+    width: 25px;
+    float: left;
+}
+p.aditional:before{
+    font-family: FontAwesome;
+    position: absolute;
+    left: 8px;
+    top: 4px;
+    color: #111;
+    font-size: 0.8em;
+}
+p.aditional a:before,
+p.aditional span:before,
+p.aditional wrapper:before{
+    font-family: FontAwesome;
+    position: absolute;
+    left: 8px;
+    /*top: 4px;*/
+    color: #111;
+    font-size: 0.8em;
+}
+p.aditional.tags:before{
+    content: "\f292";
+}
+p.aditional.grids a:before{
+    content: "\f009";
+}
+p.aditional.grids a{
+    display: block;
+}
+p.aditional.tasks wrapper:before{
+    content: "\f26c";
+}
+p.aditional.tasks wrapper{
+    display: block;
+    height: 30px;
+    line-height: 30px;
+}
+p.aditional.articles:before{
+    content: "\f1ea";
+}
+p.aditional.slug:before{
+    content: "\f0ac";
+}
+p.aditional.properties span{
+    display: block;
+}
+p.aditional.properties span:before{
+    content: "\f0ce";
+}
+p.aditional.role:before{
+    content: "\f007";
+}
+
+
+
+p.aditional.branchs wrapper {
+    display: block;
+    height: 30px;
+    line-height: 30px;
+}
+
+
+
+/* sobreescritura de los datatable para no tocar el css original */
+
+.dataTables_wrapper .dataTables_processing {
+    top: 15px;
+    background-color: #fff;
+    height: 90px;
+    line-height: 60px;
+}
+
+table.dataTable.no-footer {
+    border-bottom: none;
+}
+
+table.dataTable tbody th, table.dataTable tbody td {
+    padding: 6px 6px;
+    vertical-align: middle;
+}
+
+
+
+
+
+#item_title {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    padding: 0px;
+}
+
+#item_name {
+    margin-top: 0px;
+    margin-bottom: 15px;
+    padding: 0px;
+    font-size: 1.5em;
+}
+
+
+
+
+
+inherited{
+    display: inline;
+    /*color: #00a65a;*/
+    color: #999;
+    font-style: italic;
+}
+
+inherited a{
+    display: inline;
+    color: #999 !important;
+    /*color: #00a65a !important;*/
+}
+
+
+
+
+
+#grid_items{
+    width: 100%;
+    padding: 12px 12px;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #d2d2d2;
+}
+#grid_items li{
+    min-height: 40px;
+    line-height: 40px;
+    padding-right: 10px;
+}
+
+#grid_items li .remove{
+    margin-top: 5px;
+}
+
+.page-edit-progress{
+    width: 100%;
+    top: 20px;
+    position: relative;
+}
+
+
+
+
+
+caption {
+    font-style: italic;
+    color: #999;
+}
+
+
+
+
+/*PRODUCT*/
+
+#table_links tr{
+    cursor: pointer;
+}
+#table_links th{
+    background-color: #dddddd;
+}
+
+
+
+input[type="checkbox"].form-control,
+input[type="radio"].form-control {
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin: 0px;
+    margin-right: 5px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
+.form-checkbox-label{
+    height: 20px;
+    line-height: 20px;
+}
+
+
+.categories-sortable-list ol li {
+    min-height: 40px;
+    line-height: 40px;
+}
+
+.categories-sortable-list.full-view ol li {
+    line-height: normal;
+}
+
+.categories-sortable-list.simplified-view ol {
+    margin-top: 0px;
+
+}
+.categories-sortable-list.simplified-view ol li {
+    margin-top: 0px;
+    padding: 0px;
+    padding-left: 8px;
+}
+
+
+
+
+
+a {
+    color: #000;
+}
+a:hover {
+    color: #333;
+}
+
+.bootstrap-dialog .modal-header {
+     border-top-left-radius: 0px;
+     border-top-right-radius: 0px;
+}
+
+/*.modal-backdrop {
+   background-color: rgba(255,255,255,1);
+}
+.modal-backdrop.in {
+    opacity: 0.3;
+    filter: alpha(opacity=3);
+}*/
+
+
+
+.ui-widget.ui-widget-content {
+    z-index: 1000;
+    background-color: #374850;
+    border: 1px solid #597888;
+}
+
+.ui-widget.ui-widget-content .ui-menu-item{
+    color: #aaa;
+    font-size: 14px;
+    font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    border-bottom: 1px solid #597888;
+}
+
+
+.ui-widget.ui-widget-content li.ui-menu-item.ui-state-active{
+    color: #fff;
+    background: none;
+    background-color: #597888;
+
+}
+
+
+
+.graph-legend{
+    list-style-type: none;
+}
+
+.graph-list li{
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 26px;
+}
+.graph-list li i{
+    margin-right: 5px;
+    float: left;
+    height: 26px;
+    line-height: 26px;
+}
+.graph-list .list-label{
+    max-width: 200px;
+    overflow: hidden;
+    display: inline-block;
+    height: 26px;
+    line-height: 26px;
+}
+
+
+.box-body{
+    height: 100%;
+}
+
+
+.graph-loading{
+    width: 100%;
+    height: 80%;
+    /*background-color: #ddd;*/
+}
+
+.select2-container .not-found-add{
+    display: inline;
+    cursor: pointer;
+}
+
+
+
+.ui-sortable-placeholder{
+    background-color: #ccc;
+    visibility: visible !important;
+}
+
+
+
+/* dashboard preloader */
+
+.sk-folding-cube {
+  margin: 20px auto;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  top: 40%;
+  -webkit-transform: rotateZ(45deg);
+          transform: rotateZ(45deg);
+}
+
+.sk-folding-cube .sk-cube {
+  float: left;
+  width: 50%;
+  height: 50%;
+  position: relative;
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.sk-folding-cube .sk-cube:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+  -webkit-animation: sk-foldCubeAngle 2.4s infinite linear both;
+          animation: sk-foldCubeAngle 2.4s infinite linear both;
+  -webkit-transform-origin: 100% 100%;
+      -ms-transform-origin: 100% 100%;
+          transform-origin: 100% 100%;
+}
+.sk-folding-cube .sk-cube2 {
+  -webkit-transform: scale(1.1) rotateZ(90deg);
+          transform: scale(1.1) rotateZ(90deg);
+}
+.sk-folding-cube .sk-cube3 {
+  -webkit-transform: scale(1.1) rotateZ(180deg);
+          transform: scale(1.1) rotateZ(180deg);
+}
+.sk-folding-cube .sk-cube4 {
+  -webkit-transform: scale(1.1) rotateZ(270deg);
+          transform: scale(1.1) rotateZ(270deg);
+}
+.sk-folding-cube .sk-cube2:before {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+.sk-folding-cube .sk-cube3:before {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+.sk-folding-cube .sk-cube4:before {
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+}
+@-webkit-keyframes sk-foldCubeAngle {
+  0%, 10% {
+    -webkit-transform: perspective(140px) rotateX(-180deg);
+            transform: perspective(140px) rotateX(-180deg);
+    opacity: 0;
+  } 25%, 75% {
+    -webkit-transform: perspective(140px) rotateX(0deg);
+            transform: perspective(140px) rotateX(0deg);
+    opacity: 1;
+  } 90%, 100% {
+    -webkit-transform: perspective(140px) rotateY(180deg);
+            transform: perspective(140px) rotateY(180deg);
+    opacity: 0;
+  }
+}
+
+@keyframes sk-foldCubeAngle {
+  0%, 10% {
+    -webkit-transform: perspective(140px) rotateX(-180deg);
+            transform: perspective(140px) rotateX(-180deg);
+    opacity: 0;
+  } 25%, 75% {
+    -webkit-transform: perspective(140px) rotateX(0deg);
+            transform: perspective(140px) rotateX(0deg);
+    opacity: 1;
+  } 90%, 100% {
+    -webkit-transform: perspective(140px) rotateY(180deg);
+            transform: perspective(140px) rotateY(180deg);
+    opacity: 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+div.form-group{
+    margin-bottom: 25px;
+}
+div.form-group-stretch{ /* para los checkboxes de category campos adicionales*/
+    margin-bottom: 5px;
+}
+
+.form-group small{
+    display: block;
+    margin-bottom: 10px;
+    color: #888;
+}
+
+
+
+
+
+
+/* RESET BOOTSTRAP */
+
+.navbar-brand {
+    padding-left: 0px;
+}
+
+/* FIN RESET BOOTSTRAP */
+
+
+
+
+#published_text{
+    height: 30px;
+    line-height: 30px;
+    font-size: 1.5em;
+}
+#published_tooltip{
+    display: block;
+}
+
+#nav_index{
+    list-style: none;
+    padding: 25px;
+    margin: 0px;
+}
+#nav_index li{
+    padding: 4px;
+    cursor: pointer;
+}
+#nav_index li:before{
+    font-family: FontAwesome;
+    position: absolute;
+    left: 15px;
+    /*color: #3c8dbc;*/
+    content: "\f10c";
+}
+#nav_index li:hover::before{
+    content: "\f192";
+}
+#nav_index li.active::before{
+    content: "\f111";
+}
+#nav_index li a{
+    text-transform: capitalize;
+}
+#nav_index li a i{
+    margin-right: 5px;
+}
+
+
+
+/* FIX PARA COLS al 100% en Bootstrap para que ande el PIN STICKY*/
+.row {
+    width: 100%;
+    display: table;
+}
+
+[class*="col-"] {
+    float: none;
+    display: table-cell;
+    vertical-align: top;
+}
+/* FIN IX PARA COLS al 100% en Bootstrap */
+
+
+
+.tip-box{
+    padding: 10px;
+    color: #777777;
+    background-color: #fff9bd;
+    font-size: 0.9em;
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+.tip-box ul{
+    margin: 0px;
+}
+
+
+
+/* Fix para que datatables use FA fontawesome en vez de imagenes png*/
+
+table.dataTable thead th{
+    position: relative;
+    padding-right: 20px;
+}
+table.dataTable thead .sorting:before{
+    font-family: FontAwesome;
+    position: absolute;
+    right: 6px;
+    top: 6px;
+    /*color: #3c8dbc;*/
+    content: "\f0dc";
+    opacity: 0.25;
+}
+table.dataTable thead .sorting_desc:before{
+    font-family: FontAwesome;
+    position: absolute;
+    right: 6px;
+    top: 3px;
+    /*color: #3c8dbc;*/
+    content: "\f0dd";
+}
+table.dataTable thead .sorting_asc:before{
+    font-family: FontAwesome;
+    position: absolute;
+    right: 6px;
+    top: 8px;
+    /*color: #3c8dbc;*/
+    content: "\f0de";
+}
+table.dataTable thead th{
+    background: none !important;
+}
+
+
+
+
+/* Froala */
+
+
+.froala-element{
+    font-size: 20px;
+}
+
+.fr-wrapper span.fr-placeholder{
+    background-color: rgba(68, 68, 68, 0.22);
+    color: #111111;
+    font-size: 18px !important;
+    height: 100%;
+    line-height: 50px !important;
+}
+
+div.fr-view {
+    text-align: inherit;
+}
+
+
+
+#list_fields{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+#list_fields li{
+    float: left;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+
+
+
+
+.sticky{
+    width: 100%;
+}
+
+
+
+
+#fields_group{
+    padding: 0px;
+}
+
+
+.schema-field{
+    background-color: #eee;
+    margin-bottom: 10px;
+    padding: 20px;
+    width:100%;
+}
+
+
+.schema-field-row{
+    border-bottom: 1px dashed #ccc;
+}
+
+
+.schema-field .form-group{
+    margin: 5px;
+}
+
+.schema-field .form-group input,
+.schema-field .form-group select{
+    width: 100%;
+}
+
+
+.sidebar-collapse .user-panel{
+    display: none;
+}

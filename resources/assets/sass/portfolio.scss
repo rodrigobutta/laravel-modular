@@ -1,0 +1,61 @@
+@import "vendor/bootstrap/variables";
+@import "vendor/bootstrap/mixins";
+@import "_variables";
+
+
+
+#intranet_portfolio{
+
+    .uk-overlay-primary {
+        background: rgba(55, 55, 55, 0.2);
+        // border: 1px dashed $brand-primary;
+    }
+   /*  .uk-overlay {
+        padding: 0px;
+    }
+ */
+    .client-name{
+        font-weight:bold;
+        color: $brand-primary;
+    }
+
+    .client-job{
+        font-weight:normal;
+        color: $brand-secondary;
+    }
+
+    .cover-vertical{
+        max-width: 300px;
+    }
+
+    .item{
+        float: left;
+
+        h2{
+            background-color: #fff;
+        }
+    }
+
+
+
+}
+
+.uk-modal-title {
+	font-size: 1.6rem;
+	line-height: 1;
+}
+
+.uk-h2, h2 {
+	font-size: 1.6rem;
+	line-height: 1;
+}
+
+.uk-modal-body{
+    max-width: 760px;
+    .description{
+        max-width: 640px;
+    }
+    .tags{
+        color: $brand-primary;
+    }
+}

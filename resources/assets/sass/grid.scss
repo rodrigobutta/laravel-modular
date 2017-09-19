@@ -1,0 +1,188 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+body ul#sections {
+    margin: 100px 0 0 0;
+    /*line-height: 1.1;*/
+    list-style-type: none;
+    padding: 0px;
+    overflow: hidden;
+}
+body ul#sections:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+    body ul#sections .vcenter {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    body ul#sections .hcenter {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: center;
+    }
+
+
+    ul#sections .group{position:relative;width:100%;clear:both}
+    ul#sections .group:after,
+    ul#sections .group .wp:after{
+        display:block;
+        clear:both;
+    }
+
+    ul#sections .group:after,
+    ul#sections .wp:after{
+        content:'';
+    }
+
+
+    ul#sections article {
+        float:left;
+        position:relative;
+    }
+
+    ul#sections article.width_1 {
+        width:100%;
+    }
+    ul#sections article.width_2 {
+        width:50%;
+    }
+    ul#sections article.width_3 {
+        width:33.33%;
+    }
+    ul#sections article.width_4 {
+        width:25%;
+    }
+    ul#sections article.width_xl {
+        width:130%;
+    }
+
+    ul#sections article.height_1,
+    ul#sections span.height_1 {
+        /* height: calc(395px + 25px); */
+    }
+    ul#sections article.height_2,
+    ul#sections span.height_2 {
+        height: calc(815px + 25px);
+    }
+    ul#sections article.height_3,
+    ul#sections span.height_3 {
+        height: calc(1200px + 25px);
+    }
+    ul#sections span.heighter {
+        display: block;
+        position: relative;
+        z-index: -1;
+        opacity: 0;
+        width: 100%;
+    }
+
+    ul#sections article.pa {
+        position:absolute;
+        left:0;
+        top: 0;
+    }
+    ul#sections article.fr {
+        float:right;
+        left:auto;
+        right:0
+    }
+    ul#sections article.nf {
+        float:none;
+    }
+    ul#sections .wp {
+        width: 100%;
+        margin: auto;
+        height: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    ul#sections .article-container {
+        height: 100%;
+        position: relative;
+        z-index: 1;
+    }
+
+
+.contents img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.section {
+    position: relative;
+}
+.section .contents {
+    width: calc(100% - 26px);
+    height: auto;
+    margin: 13px;
+}
+
+
+
+
+
+
+
+
+/* ####################################*/
+/* REGLAS GENERALES */
+/* ####################################*/
+
+.width_2.pa.fr .contents{
+    width: calc(100% - 12px);
+    margin-right: 0px;
+}
+
+.width_2.pa:not(.fr) .contents{
+    width: calc(100% - 12px);
+    margin-left: 0px;
+}
+
+.section.full .contents{
+    width: calc(100% - 0px);
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+
+
+
+
+
+/* ####################################*/
+/* REGLAS ESPECIFICAS DE SECTION TYPES */
+/* ####################################*/
+
+/* body ul#sections .module_2x1_full_left article.pa,
+body ul#sections .module_2x2_full_left article.pa,
+body ul#sections .module_2x3_full_left article.pa {
+    right: calc(50% - 1249px / 2);
+    width: 200%;
+    left: auto;
+} */
+   
+
+/*/////////////////*/
+/*  MEDIA QUERIES  */
+/*/////////////////*/
+/* @media only screen and (max-width: 1285px) {
+    body ul#sections .module_2x1_full_right article.pa,
+    body ul#sections .module_2x2_full_right article.pa,
+    body ul#sections .module_2x3_full_right article.pa {
+        left: 13px;
+    }
+    body ul#sections .module_2x1_full_left article.pa,
+    body ul#sections .module_2x2_full_left article.pa,
+    body ul#sections .module_2x3_full_left article.pa {
+        right: 13px;
+    }
+} */
+

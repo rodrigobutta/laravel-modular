@@ -1,0 +1,42 @@
+// grid
+$grid-gutter-width: 1.041666666666667%;
+
+
+// breakpoints
+$breakpoint-medium: 1366px;
+$breakpoint-small: 960px;
+$breakpoint-extra-small: 700px;
+
+// colors
+$sullair-green: #008657;
+$sullair-green2: #66b59b;
+$sullair-light-green: #f4f6f6;
+$sullair-orange: #f7931d;
+$sullair-white: #fff;
+$sullair-black: #000;
+$sullair-black-julio: #232323;
+$sullair-light-grey: #f6f6f6;
+$sullair-light-grey2: #e5e5e5;
+$sullair-light-grey3: #f2f2f2;
+$sullair-light-grey4: #eaeaea;
+$sullair-medium-grey: #626262;
+$sullair-medium-grey2: #d2d2d2;
+$sullair-medium-grey3: #929292;
+$sullair-dark-grey: #333333;
+
+
+// fonts
+$font-family-sans-serif:  'Helvetica Neue LT Std', Helvetica, Arial, sans-serif !default;
+
+$font-weight-light: 300;
+$font-weight-roman: normal;
+$font-weight-medium: 500;
+$font-weight-bold: bold;
+
+// z-index order
+$filters-z: 250;
+$breadcrumbs-z: 400;
+$slider-cta-z: 500;
+$header-z: 3000;
+$subnav-z: 2000;
+$overlay-z: 1000;

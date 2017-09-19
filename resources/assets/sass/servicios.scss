@@ -1,0 +1,79 @@
+@import "vendor/bootstrap/variables";
+@import "vendor/bootstrap/mixins";
+@import "_variables";
+
+
+
+#intranet_servicios{
+
+    .item{
+
+        @media screen and (max-width: $screen-xs) {
+            h2{
+                text-align: center;
+            }
+
+        }
+
+
+        img{
+            width: 100%;
+        }
+        p{
+            text-align: justify;
+
+            @media screen and (max-width: $screen-xs) {
+                text-align: center;
+            }
+
+        }
+
+        @media screen and (max-width: $screen-xs) {
+            .item-picture{
+                text-align: center;
+            }
+            h3{
+                text-align: center;
+                font-style: 1.4em;
+            }
+
+        }
+    }
+
+    .intranet-cover {
+        &:after {
+            background-image: url(../img/servicios/cover-bg.jpg);
+        }
+    }
+
+    .no-gutter {
+      margin-right: 0;
+      margin-left: 0;
+    }
+    .no-gutter [class*="col-"] {
+      padding-right: 0;
+      padding-left: 0;
+    }
+
+
+    // combineta de clases para que el child tome el alto del padre
+    .full-height-parent{
+        display: flex;
+    }
+    .full-height-child{
+        align-items: stretch;
+    }
+
+
+
+    .col-text{
+      display: table-cell;
+      vertical-align: middle;
+    }
+
+
+
+
+
+}
+
